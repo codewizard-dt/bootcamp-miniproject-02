@@ -1,5 +1,5 @@
 :root {
-  --gray: rgb(69, 75, 76);
+  --gray: rgb(30, 33, 34);
   --blue: rgb(140, 226, 247);
   --blue03: rgba(140,226,247,0.3);
   --pink: rgb(232, 102, 236);
@@ -89,6 +89,7 @@ pre.code {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  line-height: 1.2;
 }
 
 @media screen and (max-width: 992px) {
