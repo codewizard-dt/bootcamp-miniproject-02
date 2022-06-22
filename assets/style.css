@@ -92,6 +92,10 @@ pre.code {
   line-height: 1.2;
 }
 
+footer {
+  text-align: center;
+}
+
 @media screen and (max-width: 992px) {
   .grid {
       grid-template-columns: repeat(2, 50%);
