@@ -1,0 +1,89 @@
+:root {
+  --gray: rgb(69, 75, 76);
+  --blue: rgb(140, 226, 247);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    background-color: var(--gray);
+  color: white;
+  padding: 1rem;
+}
+header {
+  color: var(--blue)
+}
+header p {
+  color: white;
+  padding: 1rem;
+  max-width: 800px;
+  margin: auto;
+}
+body > header {
+  text-align: center;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+main {
+  margin-top: 2rem;
+}
+.grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 30%);
+  gap: 5px;
+  grid-auto-flow: row;
+  justify-content: stretch;
+}
+
+.card {
+  transition: 0.5s ease-in-out;
+  padding: 1rem;
+  border: 1px dashed white;
+  margin-bottom: 2rem;
+}
+.card header {
+  font-weight: 700;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  transition: 0.5s ease-in-out;
+  position: relative;
+  margin-top: -2rem;
+  background-color: var(--gray);
+  border: 1px solid white;
+  padding: 0.5rem;
+}
+.card:hover,
+.card:hover header{
+  box-shadow: inset 0px 0px 8px rgba(232,102,236,1), 0 0 15px rgba(232,102,236,1);
+}
+.card .description {
+  padding: 1.5rem 0;
+}
+
+
+pre.code {
+  font-family: Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
+      'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace;
+  white-space: pre-wrap;
+  flex: 1;
+  align-self: stretch;
+  border-radius: 3px;
+  padding: 0.5rem;
+  background-image: linear-gradient(rgba(29, 182, 220, 0.3) 0%,
+        rgba(232, 102, 236, 0.6) 100%);
+  user-select: all;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
